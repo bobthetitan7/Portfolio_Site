@@ -305,7 +305,7 @@ h1.prior {
     }
 }
 
-@media only screen and (min-width: 1024px)  {
+@media only screen and (min-width: 1080px)  {
 
     .experience{
         padding-bottom: 8em;
@@ -400,11 +400,11 @@ h1.prior {
     .intro h1, .intro p{
         width: 50%;
         position: relative;
-        top: 120px;
+        top: calc(50vh - 380px);
     }
 
     .intro h1{
-        left: -5vw;
+        left: -5.5vw;
         font-size: 3.5em;
     }
 
@@ -414,12 +414,12 @@ h1.prior {
     }
 
     .experience{
-        margin-top: 38em;
+        margin-top: calc(75vh - 250px);
     }
     
     .down{
         left: -25vw;
-        top: 150px;
+        top: calc(50vh - 350px);
     }
 
     .filler{
@@ -429,7 +429,7 @@ h1.prior {
         max-width: 550px;
         width: 40%;
         left: 65%;
-        top: calc(-10vw + 240px);
+        top: calc(50vh - 350px);
 
         animation-name: spin;
         animation-duration: 60000ms;
@@ -450,12 +450,16 @@ h1.prior {
 
 @media only screen and (min-width: 1200px)  {
 
-    .container {
-        width: 75%;
-        margin: 0 auto;
-    }
-    .showcase, .xp {
-        width: 100%;
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+.showcase, .xp {
+    width: 100%;
+}
+
+.intro h1{
+    left: -6.5vw;
 }
 
 .VP{
@@ -471,6 +475,10 @@ h1.prior {
 }
 
 @media only screen and (min-width: 1350px)  {
+
+    .intro h1{
+        left: -8vw;
+    }
 
     .container {
         width: 70%;
@@ -493,7 +501,28 @@ h1.prior {
     margin-bottom: -5vw;
 }
 
+.filler{
+    top: calc(50vh - 350px);
+}
+
+@media only screen and (min-width: 1480px)  {
+
+    
+    .experience{
+        margin-top: calc(75vh - 180px);
+    }
+
+    .filler{
+        top: calc(50vh - 400px);
+    }
+}
+
+
 @media only screen and (min-width: 1550px)  {
+
+    .filler{
+        top: calc(50vh - 440px);
+    }
 
     .container {
         width: 70%;
@@ -510,5 +539,11 @@ h1.prior {
 
     .xp img{
         margin-bottom: -70px;
+    }
+}
+
+@media only screen and (min-width: 1800px)  {
+    .filler{
+        top: calc(50vh - 470px);
     }
 }
