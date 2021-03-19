@@ -1,6 +1,6 @@
 # Portfolio_Site
-Portfolio Site build beta 0.1
+Portfolio Site build beta 0.2
 
-Changelog: optimization for tablets
+Changelog: Revised Content
 
 Ongoing optimization for ultrawide, laptops and mobile devices
