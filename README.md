@@ -1,6 +1,7 @@
 # Portfolio_Site
-Portfolio Site build beta 0.2
 
-Changelog: Revised Content
+## Portfolio Site version 0.3
 
-Ongoing optimization for ultrawide, laptops and mobile devices
+Changelog: Revised Content & Fixing typos
+
+Ongoing optimization for ultrawide, laptops and mobile devices and rewrite with React elements
