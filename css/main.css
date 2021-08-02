@@ -54,8 +54,30 @@ header {
 }
 
 .intro h1{
+    font-family: consolas;
+    margin: auto;
     font-size: 3em;
     font-weight: 800;  
+    animation: 
+      type 3s steps(15), 
+      animated-cursor 1000ms steps(15, end) infinite 3s; 
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid orange;
+    width: 15ch;
+}
+
+@keyframes type{
+  from{
+    width: 0ch;
+  }
+  to {
+    width: 15ch;
+  }
+}
+@keyframes animated-cursor{
+  from{border-right-color: orange;}
+  to{border-right-color: transparent;}
 }
 
 .intro p {
@@ -393,24 +415,30 @@ h1.prior {
         top: -16vw;
     }
 
+    .reka{
+      top: -12vw
+    }
+
     .experience li{
         padding-bottom: 0;
     }
 
     .intro h1, .intro p{
-        width: 50%;
         position: relative;
+        left: -25vw;
         top: calc(50vh - 380px);
+        text-align: center;
     }
 
     .intro h1{
-        left: -5.5vw;
-        font-size: 3.5em;
+        width: 15ch;
+        margin: auto, 20px;
+        font-size: 3em;
     }
 
     .intro p{
-        left: -25vw;
-        font-size: 2.25em;
+      width: 50%;
+      font-size: 2.25em;
     }
 
     .experience{
@@ -450,35 +478,28 @@ h1.prior {
 
 @media only screen and (min-width: 1200px)  {
 
-.container {
-    width: 75%;
-    margin: 0 auto;
-}
-.showcase, .xp {
-    width: 100%;
-}
+    .container {
+        width: 75%;
+        margin: 0 auto;
+    }
+    .showcase, .xp {
+        width: 100%;
+    }
 
-.intro h1{
-    left: -6.5vw;
-}
+    .VP{
+        top: -10.5vw;
+    }
 
-.VP{
-    top: -10.5vw;
-}
+    .TC{
+        top: -14.5vw;
+    }
 
-.TC{
-    top: -14.5vw;
-}
-
-.xp img{
-    margin-bottom: -5.5vw;
+    .xp img{
+        margin-bottom: -5.5vw;
+    }
 }
 
 @media only screen and (min-width: 1350px)  {
-
-    .intro h1{
-        left: -8vw;
-    }
 
     .container {
         width: 70%;
@@ -487,22 +508,23 @@ h1.prior {
     .showcase, .xp {
         width: 100%;
         max-width: 1050px;
-}
+    }
 
-.VP{
-    top: -9vw;
-}
+    .VP{
+        top: -9vw;
+    }
 
-.TC{
-    top: -13vw;
-}
+    .TC{
+        top: -13vw;
+    }
 
-.xp img{
-    margin-bottom: -5vw;
-}
+    .xp img{
+        margin-bottom: -5vw;
+    }
 
-.filler{
-    top: calc(50vh - 350px);
+    .filler{
+        top: calc(50vh - 350px);
+    }
 }
 
 @media only screen and (min-width: 1480px)  {
