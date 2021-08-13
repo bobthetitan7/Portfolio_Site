@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600,800&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -13,7 +14,7 @@ p, h3 {
 }
 
 .heading {
-    font-size: 2.4em;
+    font-size: 2.0em;
     line-height: 1.5em;
 }
 
@@ -54,9 +55,9 @@ header {
 }
 
 .intro h1{
-    font-family: consolas;
-    margin: auto;
-    font-size: 3em;
+    font-family: 'Roboto Mono', monospace;;
+    margin: 25px auto;
+    font-size: 2.35em;
     font-weight: 800;  
     animation: 
       type 3s steps(15), 
@@ -115,7 +116,7 @@ h1.prior {
 .experience {
     width: 100%;
     background: #00e1ff3d;
-    margin-top: calc(25% + 10px);
+    margin-top: calc(25% + 35px);
     margin-bottom: 0;
     padding: 10em 0em 0em;
     border-radius: 40px;    
@@ -139,8 +140,7 @@ h1.prior {
 }
 
 .experience img {
-    width: 400px;
-    
+    width: 80%; 
 }
 
 .experience li {
@@ -178,6 +178,10 @@ h1.prior {
 
 .current_work h1{
     margin-bottom: 2em;
+    transform: skewY(6.8deg);
+    opacity: 1;
+    color: #000000;
+    margin-top: -2em;
 }
 
 .current_work h2{
@@ -194,13 +198,6 @@ h1.prior {
     position: relative;
     z-index: 15;
     transform: skewY(6.8deg);
-}
-
-.current_work h1{
-    transform: skewY(6.8deg);
-    opacity: 1;
-    color: #000000;
-    margin-top: -2em;
 }
 
 
@@ -220,26 +217,27 @@ h1.prior {
     margin: 1em auto 2em;
     padding-bottom: 1.5em;
     padding-top: 0.5em;
-    border-radius: 40px;    
+    border-radius: 40px;
 }
 
 .current_work ul ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
 }
 
-.contact img{
-    width: 100px;
+.contact i{
+    margin: 0px 10px;
 }
 
-.contact ul li:nth-child(2) img{
+/* .contact ul li:nth-child(2) img{
     width: 120px;
     margin-top: -10px;
-}
+} */
 
 .contact p{
-    font-size: 1.7em;
+    font-size: 1.6em;
 }
 
 .contact ul{
@@ -255,9 +253,17 @@ h1.prior {
         width: 80%;
     }
 
+    .intro h1 {
+      font-size: 3em;
+    }
+
     .intro p, .current_work h3, .contact p{
         width: 85%;
         margin: 0 auto;
+    }
+
+    .experience img {
+        width: 60%; 
     }
 }
 
@@ -433,7 +439,7 @@ h1.prior {
     .intro h1{
         width: 15ch;
         margin: auto, 20px;
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .intro p{
