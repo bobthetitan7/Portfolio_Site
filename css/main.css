@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;600,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600&display=swap');
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -55,10 +55,10 @@ header {
 }
 
 .intro h1{
-    font-family: 'Roboto Mono', monospace;;
+    font-family: 'Roboto Mono', monospace;
     margin: 25px auto;
     font-size: 2.35em;
-    font-weight: 800;  
+    font-weight: 500;  
     animation: 
       type 3s steps(15), 
       animated-cursor 1000ms steps(15, end) infinite 3s; 
@@ -321,7 +321,7 @@ h1.prior {
 
     .intro h1{
         font-size: 3.3em;
-        font-weight: 900;  
+        font-weight: 500;  
     }
     
     .intro p {
